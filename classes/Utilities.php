@@ -68,6 +68,30 @@ class Utilities {
         return (($intNumber % 2 == 0) ? true : false);
     }
 
+    
+    public static function getProperDivisors($intN)
+    {
+        return $arr;
+    }
+    
+    public static function getDivisors($intN)
+    {
+        $arrDiv = array();
+        $bound = floor(sqrt($intN));
+        for ($i = 1; $i <= $bound; $i++)
+        {
+          if ($intN % $i == 0) {
+              if (!in_array($i, $arrDiv)) { 
+                $arrDiv[] = $i ;
+              }
+              if (!in_array($intN / $i, $arrDiv)) { 
+                $arrDiv[] = $intN / $i ;
+              };
+          }
+        }
+        return $arrDiv;
+    }
+    
     /**
      * Zwraca liczbe podzielnikow liczby
      *

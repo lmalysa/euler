@@ -41,7 +41,7 @@ class Logic_Multiplies extends Logic {
     public function checkIfDivisible($intOp, $arr) 
     {
         foreach ($arr as $int) {
-            if ($intOp % $intOp == 0) {
+            if ($intOp % $int == 0) { 
                return true; 
             }
         }

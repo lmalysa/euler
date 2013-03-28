@@ -11,6 +11,11 @@
  * @author l.malysa
  */
 class Problem_1 {
-    //put your code here
+    
+    public function getResult()
+    {
+        $o = new Logic_Multiplies();
+        $arr = $o->getMultipliesBy(array(3,5), 1000);
+        return array_sum($arr);
+    }
 }
-?>

@@ -1,13 +1,11 @@
 <?php
-class EulerTask20 extends EulerTask
+class EulerTask21 extends EulerTask
 {
-    private $strDescription = "Find the sum of digits in 100!";
-
+    
 
     public function run()
     {
-        $intFac = Utilities::getFactorial(100);
-        $arrDigits = Utilities::getArrOfDigits((string) $intFac);
-        echo array_sum($arrDigits);
+       $a = Utilities::getProperDivisors(10);
+       echo implode(',',$a);
     }
 }
