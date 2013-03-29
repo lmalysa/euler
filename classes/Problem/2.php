@@ -10,12 +10,10 @@
  *
  * @author l.malysa
  */
-class Problem_1 extends Problem {
+class Problem_2 extends Problem {
     
     public function getResult()
     {
-        $o = new Logic_Multiplies();
-        $arr = $o->getMultipliesBy(array(3,5), 1000);
-        return array_sum($arr);
+        $o = 1/0;
     }
 }

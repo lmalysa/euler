@@ -14,6 +14,6 @@ abstract class Problem implements IProblem{
     
     public function getResult()
     {
-        throw new Exception(__METHOD__.' mus be implemented');
+        throw new Exception(__METHOD__.' must be implemented');
     }
 }
