@@ -14,6 +14,15 @@ class Problem_2 extends Problem {
     
     public function getResult()
     {
-        $o = 1/0;
+        $o = new Logic_Fibonacci();
+        $m = new Logic_Multiplies();
+        $arrSeq = $o->getSequence(4000000);
+        $intSum = 0;
+        foreach($arrSeq as $intElement) {
+            if ($m->checkIfDivisible($intElement, 2)) {
+                $intSum+=$intElement;   
+            }
+        }
+        return $intSum;
     }
 }
