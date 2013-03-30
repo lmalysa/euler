@@ -10,7 +10,7 @@
  *
  * @author l.malysa
  */
-class Problem_1 {
+class Problem_1 extends Problem {
     
     public function getResult()
     {

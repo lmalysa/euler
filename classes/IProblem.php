@@ -10,7 +10,5 @@
  * @author l.malysa
  */
 interface IProblem {
-    //put your code here
+    public function getResult();
 }
-
-?>

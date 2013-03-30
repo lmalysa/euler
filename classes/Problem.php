@@ -10,8 +10,10 @@
  *
  * @author l.malysa
  */
-class Problem {
-    //put your code here
+abstract class Problem implements IProblem{
+    
+    public function getResult()
+    {
+        throw new Exception(__METHOD__.' must be implemented');
+    }
 }
-
-?>
